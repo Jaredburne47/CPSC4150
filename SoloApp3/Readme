@@ -1,0 +1,29 @@
+# Solo App 3 — Fetch & Display Data
+
+## API Used
+- Dog CEO API
+- Endpoint: `https://dog.ceo/api/breeds/image/random`
+
+## How to Run
+Ensure Flutter SDK is installed
+- Add dependency in `pubspec.yaml`:
+  dependencies:
+    http: ^1.2.2
+Run commands:
+flutter pub get
+flutter run
+
+## User Actions
+Fetch Another Dog → loads a new random dog image
+Retry (error state) → retries the request
+
+## Features
+HTTP GET request to public API
+JSON parsing with dart:convert
+Loading spinner during fetch
+Error message + retry button on failure
+Displays dog image with styling & padding
+Empty-state fallback
+
+## Edge Case
+No internet / bad URL → shows error UI with retry option
